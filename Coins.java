@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Coins {
-    static int[] coins = {1, 4, 5};
+    static int[] coins = {1, 5, 10, 25};
     static Map<Integer, Integer> memo = new HashMap<Integer, Integer>();
 
     public static void main(String[] args) throws Exception {

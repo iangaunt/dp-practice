@@ -15,6 +15,15 @@ public class LongestSubsequence {
         input.close();
 
         System.out.println(longestCommonSubsequence(m, n));
+        System.out.println(editingDistance(m, n));
+    }
+
+    public static int editingDistance(String m, String n) {
+        String longestCommonSub = longestCommonSubsequence(m, n);
+        int delDiff = m.length() - longestCommonSub.length();
+        int insDiff = n.length() - longestCommonSub.length();
+
+        return delDiff + insDiff;
     }
 
     public static String longestCommonSubsequence(String m, String n) {
